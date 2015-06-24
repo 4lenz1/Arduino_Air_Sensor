@@ -40,7 +40,6 @@ ApplicationWindow {
                 text:" Carbon Monoxide \n flammable gasses"
                 anchors.bottom: parent.bottom
                 anchors.right:  parent.right
-
                 color : "white"
                 font.pixelSize: 20
             }
@@ -49,7 +48,8 @@ ApplicationWindow {
                 id : rectmq9
                 color : "yellow"
                 //anchors.centerIn:  parent
-                anchors.horizontalCenter: txtMq9.horizontalCenter
+                anchors.right:  parent.right
+                //anchors.horizontalCenter: txtMq9.horizontalCenter
                 anchors.bottom:  txtMq9.top
                 width: parent.width / 5;
                 height :  parent.height / 4;
@@ -77,6 +77,23 @@ ApplicationWindow {
                         easing.type:  Easing.OutCubic;
                     }// end NumberAnimation
                 } // end Behavior
+            }
+            Rectangle{
+                id : rectmq4
+                color : "Green"
+                //anchors.horizontalCenter: txtMq4.horizontalCenter
+                anchors.left:  parent.left
+                anchors.bottom: txtMq4.top
+                width:  parent.width / 5
+                height:  parent.height / 2
+                radius:  4
+
+                Behavior on height {
+                    NumberAnimation{
+                        duration: 1000
+                        easing.type: Easing.OutCubic
+                    }
+                }
             }
 
         }// end Frame
