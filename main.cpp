@@ -1,5 +1,9 @@
 #include <QApplication>
 #include <QQmlApplicationEngine>
+#include <QDebug>
+#include <QSerialPort>
+#include <QObject>
+#include <datareceive.h>
 
 int main(int argc, char *argv[])
 {
